@@ -1,5 +1,14 @@
 """
 https://www.youtube.com/watch?v=YDf982Lb84o
+http://www.geeksforgeeks.org/program-nth-catalan-number/
+
+ANALYSIS OF ALGORITHM:
+----------------------
+Time Complexity: Time complexity of above implementation is O(n2)
+
+Better solution:
+------------------
+Using Binomial Coefficient which could take O(n)
 """
 def count_binary_trees_dp(n):
     if n == 0:
