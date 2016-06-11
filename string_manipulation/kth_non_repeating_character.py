@@ -63,9 +63,9 @@ def hash_map_non_repeating_count(string, k):
 
 
 def pretty_header_printer(string1):
-    print "----------------"
+    print "-"*50
     print string1
-    print "----------------"
+    print "-"*50
 
 def pretty_output_printer(function_name, *custom_args):
     print "{0} called with {1} => Result : {2}".format(function_name.func_name, custom_args, function_name(*custom_args))

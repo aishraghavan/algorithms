@@ -14,5 +14,11 @@ class Stack :
         return (self.items == [])
 
     def top(self):
-        if not self.is_empty():
+        if self.is_empty():
             return
+        return self.items[-1]
+
+    def print_contents(self):
+        temp = deepcopy(self.items)
+        while (len(temp)!= 0):
+            print temp.pop()
