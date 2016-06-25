@@ -3,7 +3,7 @@ from _tree import Tree
 def binary_tree_count(node):
     if node == None:
 	return (0)
-    return	1 + binary_tree_count(node.left) + binary_tree_count(node.right)
+    return 1 + binary_tree_count(node.left) + binary_tree_count(node.right)
 
 def binary_tree_complete(node, index, number_of_nodes):
     if node == None:
