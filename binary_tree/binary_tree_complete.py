@@ -1,4 +1,5 @@
 from _tree import Tree
+
 def binary_tree_count(node):
 	if node == None:
 		return (0)
@@ -13,8 +14,6 @@ def binary_tree_complete(node, index, number_of_nodes):
 		binary_tree_complete(node.left, 2*index + 1, number_of_nodes) and
 		binary_tree_complete(node.right, 2*index + 2, number_of_nodes) 
 		)
-
-
 
 def make_sample_bst():
     l1 = Tree(5)
