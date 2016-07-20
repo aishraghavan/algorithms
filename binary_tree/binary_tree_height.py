@@ -1,9 +1,9 @@
-from _tree import Tree
 from _queue import Queue
+from tree_helpers import sample_tree
 
 def height_of_tree(head):
     if head == None:
-        return
+        return 0
     queue = Queue()
     queue.insert(head)
     height = 0
@@ -23,9 +23,6 @@ def height_of_tree(head):
                 queue.insert(node.right)
             children_count -= 1
 
-n1= Tree(4)
-n2= Tree(5)
-n3= Tree(2, n1, n2)
-n4= Tree(3)
-root = Tree(1, n3, n4)
-print height_of_tree(root)
+if __name__ == "__main__":
+    root = sample_tree()
+    print height_of_tree(root)
