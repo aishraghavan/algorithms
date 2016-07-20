@@ -30,6 +30,10 @@ def naive_palindrome_check_by_comparing_list_and_reversed_list(org_list, prev_li
 # even palindrome
 ###palindrom_based_on_middle_element(convert_array_to_linked_list(['f', 'g', 'e', 'e', 'g', 'f']))
 
+# def palindrom_based_on_middle_element(head):
+
+
+
 def method_2_using_stack(head):
     if not head:
         print "empty linked list"

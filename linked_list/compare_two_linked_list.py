@@ -6,6 +6,7 @@ def check_if_both_linked_list_are_same(head1, head2):
         print "Empty linked list."
         return False
 
+    # Actually this is not needed.
     if count_no_of_elements(head1) != count_no_of_elements(head2):
         print "Number of nodes do not match!!!"
         return False

@@ -14,8 +14,10 @@ def cycle_or_not(node):
     print "No cycle found"
     return False
 
+
+
 head_cycle = generate_linked_list(5)
-head_cycle.next.next.next.next = head_cycle.next.next
+head_cycle.next.next.next.next.next = head_cycle.next.next
 cycle_or_not(head_cycle)
 
 head = generate_linked_list(5)
