@@ -93,4 +93,4 @@ print_zig_zag_simple("GEEKSFORGEEKS", 3)
 # Error checking
 #print_zig_zag_simple("", 3)
 
-print_zig_zag_efficient("GEEKSFORGEEKS", 3)
+print_zig_zag_efficient("GEEKSFORGEEKS", 4)
