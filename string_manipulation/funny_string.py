@@ -13,6 +13,7 @@ Not Funny
 def funny_string(element):
     revered_str = element[::-1]
     funny_flag= False
+    # ay be this can be reduced to half the length
     for i in range(0,len(element)-1):
         if abs(ord(element[i]) - ord(element[i+1])) != abs(ord(revered_str[i]) - ord(revered_str[i+1])):
             print "Not Funny"
