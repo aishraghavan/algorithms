@@ -2,6 +2,7 @@
 http://www.geeksforgeeks.org/print-all-interleavings-of-given-two-strings/
 """
 
+Fbrackets
 def print_all_interleavings_of_given_two_strings(result_string, string1, string2, len_string1, len_string2, res_index):
 
 	if len_string1 == 0 and len_string2 == 0:
