@@ -28,3 +28,25 @@ def sample_tree():
 	n4= Tree(3)
 	root = Tree(1, n3, n4)
 	return root
+
+def example_big_tree():
+	"""
+	                        50
+	           20                         100
+	     30        40               25            45
+	 32                23        21    22      11
+
+	"""
+	n32 = Tree(32)
+	n30 = Tree(30, n32)
+	n23 = Tree(23)
+	n40 = Tree(40, 23)
+	n20 = Tree(20, n30, n40)
+	n21 = Tree(21)
+	n22 = Tree(22)
+	n25 = Tree(25, n21, n22)
+	n11 = Tree(11)
+	n45 = Tree(45, n11)
+	n100 = Tree(100,n25, n45)
+	root = Tree(50, n20, n100)
+	return root

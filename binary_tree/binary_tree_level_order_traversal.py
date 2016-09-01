@@ -1,5 +1,6 @@
 from _tree import Tree
 from _queue import Queue
+from _node import Node
 
 def level_order_traversal(node):
     if node == None:
