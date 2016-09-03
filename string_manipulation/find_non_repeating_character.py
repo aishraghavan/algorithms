@@ -14,7 +14,7 @@ def find_non_repeating_character_navie(string):
 		if count == 1:
 			return string[i] 
 		i +=1
-		count = 1
+		count = 1 
 
 
 def find_non_repeating_character(string):
