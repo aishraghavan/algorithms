@@ -1,0 +1,39 @@
+"""
+http://stackoverflow.com/questions/4736/learning-regular-expressions
+Once is not enough
+
+From there, you can repeat parts of your pattern with quantifiers. For example, the pattern ab?c matches 'abc' or 'ac' because the ? quantifier makes the subpattern it modifies optional. Other quantifiers are
+
+* (zero or more times)
++ (one or more times)
+{n} (exactly n times)
+{n,} (at least n times)
+{n,m} (at least n times but no more than m times)
+Putting some of these blocks together, the pattern [Nn]*ick matches all of
+
+ick
+Nick
+nick
+Nnick
+nNick
+nnick
+(and so on)
+"""
+
+$ grep ick regex_1.txt
+Putting some of these blocks together, the pattern [Nn]*ick matches all of
+ick
+Nick
+nick
+Nnick
+nNick
+nnick
+
+$ grep Nick regex_1.txt
+Nick
+nNick
+
+$ grep nick regex_1.txt
+nick
+Nnick
+nnick

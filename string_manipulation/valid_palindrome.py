@@ -33,6 +33,25 @@ def step_1_filter_input(string):
 			filtered_string += s
 	return filtered_string
 
+def another_way_to_check_palindrome(string):
+	if not string :
+		return True
+	string = string.lower()
+	start_index = 0
+	end_index = len(string)-1
+
+	while (start_index< len(string) and end_index>0):
+		while not string[start_index].isalnum():
+			start_index += 1
+		while not string[end_index].isalnum():
+			end_index -= 1
+		if string[start_index] != string[end_index]:
+			return False
+		start_index += 1
+		end_index -= 1
+	return True
+
+
 
 class Solution(object):
     def isPalindrome(self, string):
@@ -60,7 +79,8 @@ def print_output(input_string, output_string):
 	print "valid_palindrome output: {0}".format(valid_palindrome(input_string))
 	print "filtered_string: {0}".format(step_1_filter_input(input_string))
 	print "From leetcode: {0}".format(sol.isPalindrome(input_string))
-	print "check output : {0}".format("Pass" if (valid_palindrome(input_string)==output_string) else "Fail")
+	print "check output 1: {0}".format("Pass" if (valid_palindrome(input_string)==output_string) else "Fail")
+	print "check output 2: {0}".format("Pass" if (another_way_to_check_palindrome(input_string)==output_string) else "Fail")
 	print "-----------"
 
 
@@ -73,4 +93,3 @@ if __name__ == "__main__":
 	outputs = [True, False, True, False, True]
 	for input, output in zip(inputs,outputs):
 		print_output(input, output)
-
